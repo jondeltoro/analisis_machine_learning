@@ -1,0 +1,14 @@
+INSERT INTO registration_state(registration_state) SELECT DISTINCT registration_state from parking_clean;
+INSERT INTO plate_type(plate_type) SELECT DISTINCT plate_type from parking_clean;
+INSERT INTO vehicle_body_type(vehicle_body_type) SELECT DISTINCT vehicle_body_type from parking_clean;
+INSERT INTO vehicle_make(vehicle_make) SELECT DISTINCT vehicle_make from parking_clean;
+INSERT INTO issuing_agency(issuing_agency) SELECT DISTINCT issuing_agency from parking_clean;
+INSERT INTO street_name(street_name) SELECT DISTINCT street_name from parking_clean;
+INSERT INTO intersecting_street(intersecting_street) SELECT DISTINCT intersecting_street from parking_clean;
+INSERT INTO issuer_command(issuer_command) SELECT DISTINCT issuer_command from parking_clean;
+INSERT INTO issuer_squad(issuer_squad) SELECT DISTINCT issuer_squad from parking_clean;
+INSERT INTO violation_time(violation_time) SELECT DISTINCT violation_time from parking_clean;
+INSERT INTO violation_county(violation_county) SELECT DISTINCT violation_county from parking_clean;
+INSERT INTO violation_in_front_of_or_opposite(violation_in_front_of_or_opposite) SELECT DISTINCT violation_in_front_of_or_opposite from parking_clean;
+INSERT INTO sub_division(sub_division) SELECT DISTINCT sub_division from parking_clean;
+INSERT INTO vehicle_color(vehicle_color) SELECT DISTINCT vehicle_color from parking_clean;
